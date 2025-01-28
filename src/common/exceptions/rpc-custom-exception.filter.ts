@@ -28,9 +28,10 @@ export class RpcCustomExceptionFilter implements ExceptionFilter {
       return response.status(status).json(rcpError);
     }
 
+    console.log('exception', exception);
     response.status(500).json({
       status: 500,
-      message: 'Internal server error',
+      message: 'Internal server erroor',
     });
   }
 }
