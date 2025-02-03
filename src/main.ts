@@ -16,7 +16,7 @@ async function bootstrap() {
     }),
   );
 
-  console.log('hola mundo')
+  console.log('test git submodulo v2')
   app.useGlobalFilters(new RpcCustomExceptionFilter());
 
   await app.listen(envs.port);
